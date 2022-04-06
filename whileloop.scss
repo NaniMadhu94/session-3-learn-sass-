@@ -1,0 +1,9 @@
+$heading-level: 1;
+@while $heading-level <= 6  {
+  h#{$heading-level} {
+    font-size: 24px - 3 * $heading-level;
+  }
+  //  The @while directive takes a SassScript expression and repeatedly outputs
+  // the nested styles until the statement evaluates to false.
+  $heading-level: $heading-level + 1;
+}

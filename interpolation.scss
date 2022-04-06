@@ -1,0 +1,7 @@
+$selector: 'article';
+
+// using #{} does  mean that any operations near it will be treated as plain CSS.
+
+#{$selector} {
+  color: #ff0000;
+}

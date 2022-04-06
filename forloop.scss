@@ -1,0 +1,8 @@
+@for $heading-level from 1 through 6 {
+  // @for directive repeatedly outputs a set of styles. For each
+//  repetition, a counter variable is used to adjust the output.
+
+    h#{$heading-level} {
+      font-size: 24px - 3 * $heading-level;
+    }
+  }
